@@ -11,10 +11,15 @@
 	"scripts": {
 		"watch": "ncc build src/index.js --watch --license licenses.txt",
 		"build": "bun install && bunx ncc build src/index.js --license licenses.txt",
-		"lint:commit": "commitlint --last --verbose"
+		"lint:commit": "commitlint --last --verbose",
+		"lint": "eslint .",
+		"test": "node --test --import ./test-support/setup.js"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^21.2.3",
-		"@vercel/ncc": "^0.44.1"
+		"@eslint/js": "^9",
+		"@vercel/ncc": "^0.44.1",
+		"eslint": "^9",
+		"globals": "^17.13.0"
 	}
 }
