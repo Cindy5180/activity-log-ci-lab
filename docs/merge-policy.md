@@ -1,3 +1,3 @@
 # Merge policy notes (E3-A)
 
-Draft notes on when each merge style is appropriate. Filled in during the lab.
+Draft notes on merge styles, written from the bisectability point of view (E1-beta).
