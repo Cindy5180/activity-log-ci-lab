@@ -164,7 +164,7 @@ function processEventEmojiMap(value) {
     return map;
 }
 
-// Load inputs from GitHub Actions
+// Load inputs from GitHub Actions (read once at import time) (E2-B)
 const username = getInput('GITHUB_USERNAME', { required: true });
 const token = getInput('GITHUB_TOKEN', { required: true });
 const eventLimit = processEventLimit(getInput('EVENT_LIMIT'));
