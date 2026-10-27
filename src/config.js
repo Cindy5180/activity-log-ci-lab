@@ -1,5 +1,6 @@
 import { getInput, notice, setFailed } from '@actions/core';
 import { parse } from 'yaml';
+// Config module: reads and validates the GitHub Action inputs (E2-A).
 
 function processIgnoreEvents(value) {
     if (!value || value.trim() === '') {
